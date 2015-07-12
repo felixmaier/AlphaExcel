@@ -32,25 +32,16 @@
 
   function alphaToNumber(letter) {
 
-    var a = 65;
+    if (!isNaN(letter)) return void 0;
 
-    var length = 26;
+    var length = letter.length;
 
-    var newNumber = 0;
+    for (var ii = 0, number = 0; ii < length; ++ii) {
+      number *= 26;
+      number += letter.charCodeAt(ii) - ("A".charCodeAt(0) - 1);
+    }
 
-    var number = letter.charCodeAt(0);
-
-    number = number <= a ? 1 : (number % a + 1);
-
-    newNumber = parseInt((number - 1) * length);
-
-    newNumber += (length);
-
-    letter = letter.substr(1, letter.length);
-
-    if (letter[0]) return (alphaToNumber(letter) + newNumber);
-
-    return (number);
+    return (number || 1);
 
   };
 

@@ -14,11 +14,11 @@ alphaExcel(thisArg);
 ##### Example
 
 ```javascript
-var numberToColumn = alphaExcel(10);
-console.log(numberToColumn); // "J"
+var numberToColumn = alphaExcel(714);
+console.log(numberToColumn); // "AAL"
 
-var columnToNumber = alphaExcel("AA");
-console.log(numberToColumn); // 27
+var columnToNumber = alphaExcel("XFD");
+console.log(numberToColumn); // 16384
 ```
 
 ## Manual installation

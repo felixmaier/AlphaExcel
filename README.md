@@ -18,7 +18,7 @@ var numberToColumn = alphaExcel(714);
 console.log(numberToColumn); // "AAL"
 
 var columnToNumber = alphaExcel("XFD");
-console.log(numberToColumn); // 16384
+console.log(columnToNumber); // 16384
 ```
 
 ## Manual installation
